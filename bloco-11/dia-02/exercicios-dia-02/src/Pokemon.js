@@ -2,7 +2,7 @@ import React from 'react';
 
 class Pokemon extends React.Component {
 render() {
-  const { name, type, averageWeight: weight } = this.props;
+  const { name, type, averageWeight: weight, image } = this.props;
   return (
     <div>
       <div>
@@ -12,7 +12,7 @@ render() {
         <spam>Weight: { weight }</spam>
       </div>
       <div>
-
+        <img src={ image } alt={ name }/>
       </div>
     </div>
   );
