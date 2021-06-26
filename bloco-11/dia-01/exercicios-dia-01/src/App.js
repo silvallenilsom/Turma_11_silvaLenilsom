@@ -9,6 +9,8 @@ function App() {
     );
   }
 
+  const tarefas = ["Limpar o quarto", "Lavar as roupas", "Tirar o lixo", "Ir ao correio"]
+
   return (
     <div>
       <Component />
@@ -16,7 +18,7 @@ function App() {
         Resolução dos exercicios adiante.
       </p>
       <ul>
-        { Task('exercicios') }
+        { tarefas.map( (tarefa) => Task(tarefa)) }
       </ul>
     </div>
 
